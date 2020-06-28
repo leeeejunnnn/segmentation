@@ -198,7 +198,7 @@ val_dataset = tf.data.TFRecordDataset(tfr_val_dir)
 val_dataset = val_dataset.map(_pars_function)
 val_dataset = val_dataset.batch(N_BATCH).repeat()
 
-# %%
+# %% 해당부분 오류남. 
 for image, label in train_dataset.take(5):
   plt.imshow(image[0])
   title = class_list[label[0].numpy()]
